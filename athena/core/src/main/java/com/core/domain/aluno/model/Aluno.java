@@ -1,7 +1,7 @@
 package com.core.domain.aluno.model;
 
 import static java.util.Objects.requireNonNull;
-import static lombok.AccessLevel.PRIVATE;
+import static lombok.AccessLevel.*;
 
 import jakarta.persistence.AttributeOverride;
 import jakarta.persistence.Column;
@@ -20,7 +20,7 @@ import lombok.NoArgsConstructor;
 @SuppressWarnings("squid:S2160")
 
 @Getter
-@NoArgsConstructor(access = PRIVATE, force = true)
+@NoArgsConstructor(access = PROTECTED, force = true)
 
 @DynamicUpdate
 @Entity
